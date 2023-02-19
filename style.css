@@ -52,11 +52,12 @@ body {
 }
 
 .one {
-    height: calc(100vh - 105px);
+    height: 750px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .intro-container {
@@ -187,7 +188,8 @@ body {
 /* two */
 
 .two {
-    height: 100vh;
+    height: min-content;
+    padding: 100px 0%;
     width: 100%;
     background: white;
     display: flex;
@@ -231,8 +233,8 @@ body {
 }
 
 .two-right {
-    width: 50%;
-    height: 100%;
+    width:40%;
+    height: 500px;
     transition: 0.3s;
     display: flex;
     align-items: center;
@@ -258,10 +260,10 @@ body {
 .two-right-img,
 .img-layover {
     position: absolute;
-    top: 32.5vh;
-    right: 7.5vw;
-    left: 7.5vw;
-    bottom: 32.5vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     transition: 1s;
     z-index: 2;
 }
@@ -384,7 +386,8 @@ body {
 /* what i do */
 
 .whatido {
-    height: 100vh;
+    height: min-content;
+    padding: 100px 0;
     width: 100%;
     background: white;
     display: flex;
@@ -583,7 +586,8 @@ body {
 
 .services-main {
     width: 100%;
-    height: 100vh;
+    height: min-content;
+    padding: 100px 0;
     background: white;
     padding: 10%;
     display: flex;
@@ -672,12 +676,12 @@ body {
 
 .vision {
     position: relative;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
+    padding: 200px 0;
 }
 
 .v-title {
@@ -721,8 +725,8 @@ body {
     border-radius: 999999999px;
     background: rgb(216, 90, 90);
     position: absolute;
-    bottom: 7.5vh;
-    left: 12.5vw;
+    bottom: 7.5%;
+    left: 12.5%;
     transition: all 0.3s;
 }
 
@@ -732,8 +736,8 @@ body {
     border-radius: 999999999px;
     background: rgb(216, 90, 90);
     position: absolute;
-    top: 7.5vh;
-    right: 12.5vw;
+    top: 7.5%;
+    right: 12.5%;
     bottom: unset;
     left: unset;
     transition: 0.3s;
@@ -745,8 +749,8 @@ body {
     border-radius: 999999999px;
     background: rgb(216, 90, 90);
     position: absolute;
-    bottom: 17.5vh;
-    left: 7.5vw;
+    bottom: 17.5%;
+    left: 7.5%;
     transition: all 0.3s;
 }
 
@@ -756,20 +760,20 @@ body {
     border-radius: 999999999px;
     background: rgb(216, 90, 90);
     position: absolute;
-    top: 17.5vh;
-    right: 7.5vw;
+    top: 17.5%;
+    right: 7.5%;
     transition: 0.3s;
 }
 
 /* vision */
 
 .mission {
-    height: 100vh;
+    height: min-content;
     background: white;
     display: flex;
     align-items: center;
     position: relative;
-    padding: 0 5%;
+    padding: 100px 5%;
 }
 
 .profiles {
@@ -891,7 +895,8 @@ body {
 
 .end {
     padding: 5%;
-    height: 100vh;
+    height: min-content;
+    padding: 100px 5%;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -903,14 +908,12 @@ body {
 .contact-cont {
     display: flex;
     align-items: center;
-    height: 70vh;
     width: 100%;
 }
 
 .contact-info {
     padding: 5%;
-    box-sizing: border-box;
-    height: 110%;
+    height: 800px;
     min-width: 300px;
     border-radius: 18px;
     position: relative;
@@ -982,9 +985,8 @@ body {
 }
 
 .contact-form {
-    padding: 0 5%;
+    padding: 12px 5%;
     background: white;
-    height: 100%;
     width: 100%;
     box-sizing: border-box;
 }
@@ -1330,7 +1332,7 @@ form input:focus+label {
         font-size: 22px;
     }
 
-    .m-v-desc {
+    .m-v-des {
         font-size: 16px;
     }
 
@@ -1338,7 +1340,52 @@ form input:focus+label {
         display: none;
     }
 
-    /* contact form */
+    .end {
+        padding: 0;
+    }
+
+    .end-cir {
+        display: none;
+    }
+
+    .cont-title {
+        font-size: 48px;
+    }
+
+    .contact-cont {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+        height: min-content;
+        padding: 50px 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    .ci {
+        margin: 0;
+        text-align: center;
+        margin-bottom: 36px;
+    }
+
+    .cic {
+        text-align: center;
+    }
+
+    .cis {
+        align-self: center;
+    }
+
+    .social-media {
+        bottom: 2%;
+    }
+
+    .contact-form {
+        border: 5px dotted rgb(216, 90, 90);
+    }
 
     .copyright {
         font-size: 18px;
@@ -1576,17 +1623,195 @@ form input:focus+label {
         font-size: 20px;
     }
 
-    .m-v-desc {
+    .m-v-des {
         font-size: 14px;
     }
 
-    .profiles {
+    .cont-title {
+        font-size: 36px;
+    }
+
+    .contact-info {
+        padding: 35px 0;
+    }
+
+    .ci {
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+
+
+    .copyright {
+        text-align: center;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        width: 250px;
+    }
+
+    .hero-circle {
+        width: 20px;
+        height: 20px;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+
+    .main-title {
+        font-size: 36px;
+    }
+
+    .main-creator {
+        font-size: 12px;
+    }
+
+    .main-circle a,
+    .main-sec-circle a,
+    .main-third-circle a,
+    .two-circle a,
+    .two-sec-circle a,
+    .two-sec-circle a {
+        font-size: 6px;
+    }
+
+    .two {
+        padding: 50px 0;
+    }
+
+    .two-left-title {
+        font-size: 24px;
+    }
+
+    .two-left-p {
+        font-size: 14px;
+    }
+
+    .mt-title {
+        font-size: 24px;
+    }
+
+    .members {
+        grid-template-columns: 0.7fr;
+        row-gap: 18px;
+    }
+
+
+    .member-name {
+        font-size: 12px;
+    }
+
+    .member-role {
+        font-size: 10px;
+    }
+
+    .whatido {
+        padding: 50px 0;
+    }
+
+    .wid-title {
+        font-size: 24px;
+    }
+
+    .wid-desc {
+        font-size: 14px;
+    }
+
+    .wid-author {
+        font-size: 14px;
+    }
+
+    .help {
+        padding: 50px 5%;
+    }
+
+    .help-title {
+        font-size: 24px;
+    }
+
+    .percent {
+        font-size: 16px;
+    }
+
+    .percent-title {
+        font-size: 16px;
+    }
+
+    .percent-desc {
+        font-size: 10px;
+    }
+
+    .percent-container a {
+        font-size: 10px;
+    }
+
+    .services-main {
+        padding: 50px 5%;
+    }
+
+
+    .ser-box {
+        height: 50px;
+        width: 50px;
+        font-size: 14px;
+    }
+
+    .ser-title {
+        font-size: 18px;
+    }
+
+    .ser-desc {
+        font-size: 12px;
+    }
+
+    .v-quote {
+        font-size: 14px;
+    }
+
+    .mission {
+        padding: 50px 5%;
+    }
+
+    .m-title {
+        font-size: 24px;
+    }
+
+    .m-v {
+        font-size: 16px;
+    }
+
+    .m-v-des {
+        font-size: 12px;
+    }
+
+    .m-cir,
+    .m-cir-sec {
         display: none;
     }
 
-    /* contact form */
+    .cont-title {
+        font-size: 24px;
+    }
 
-    /* copyrights */
+    .ci {
+        font-size: 24px;
+    }
+
+    .cis {
+        font-size: 14px;
+    }
+
+    .cis p {
+        font-size: 14px;
+    }
+
+    .ciss {
+        font-size: 16px;
+    }
 
     .copyright {
         text-align: center;
