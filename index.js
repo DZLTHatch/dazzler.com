@@ -6,19 +6,19 @@ const contCir = document.getElementById('contcir');
 const header = document.getElementById('head');
 
 introCont.addEventListener('click', function() {
-    window.location.href = "http://127.0.0.1:5500/index.html#wid"
+    window.location.href = "https://dzlthatch.github.io/dazzler.com/#wid"
 })
 
 subCircle.addEventListener('click', function() {
-    window.location.href = "http://127.0.0.1:5500/index.html#help"
+    window.location.href = "https://dzlthatch.github.io/dazzler.com/#help"
 })
 
 contCir.addEventListener('click', function() {
-    window.location.href = "http://127.0.0.1:5500/index.html#cont"
+    window.location.href = "https://dzlthatch.github.io/dazzler.com/#cont"
 })
 
 header.addEventListener('click', function() {
-    window.location.href = "http://127.0.0.1:5500/index.html#explore"
+    window.location.href = "https://dzlthatch.github.io/dazzler.com/#explore"
 })
 
 // trImage.addEventListener('mouseover', function() {
@@ -75,11 +75,12 @@ vQuote.addEventListener("mouseover", function() {
 
         vQuote.innerText = "What's up!";
         
-        smallOne.style = 'transform: translateY(-62.5vh)';
-        bigOne.style = 'transform: translateY(-80vh)'; // 100 - 2(vh) - dimensions
+        smallOne.style = 'transform: translate(82.5vw,0)';
+        bigOne.style = 'transform: translate(70vw, 0)';
 
-        smallTwo.style = 'transform: translateY(62.5vh)';
-        bigTwo.style = 'transform: translateY(80vh)';
+        smallTwo.style = 'transform: translate(-82.5vw,0)';
+        bigTwo.style = 'transform: translate(-70vw, 0)';
+
         vq = 1;
 
     }
@@ -89,13 +90,13 @@ vQuote.addEventListener("mouseover", function() {
         vQuote.style = 'background: reset; box-shadow: none;border-bottom-left-radius: 180px; border-bottom-right-radius: 18px; border-top-left-radius: 18px; border-top-right-radius: 180px';
         vQuote.innerText = "Hey there!";
         
-        smallOne.style = 'transform: translate(82.5vw, -62.5vh)';
-        bigOne.style = 'transform: translate(70vw, -80vh)';
+        smallOne.style = 'transform: translate(0, 0)';
+        bigOne.style = 'transform: translate(0,0)';
+        
+        smallTwo.style = 'transform: translate(0, 0)';
+        bigTwo.style = 'transform: translate(0,0)';
 
-        smallTwo.style = 'transform: translate(-82.5vw, 62.5vh)';
-        bigTwo.style = 'transform: translate(-70vw, 80vh)';
-
-        vq = 2
+        vq = 2;
     }
 
     else if (vq == 2) {
@@ -158,7 +159,7 @@ m2.addEventListener('mouseover', () => {
     mM2.style = 'width: 0; height: 0; border: none;';
 
     mmp.style = 'opacity: 1';
-    mmp.src = "images/blockchain-g9b5cff6af_1920.jpg"
+    mmp.src = "images/interior-design-g9529861dc_1280.jpg"
 
 })
 
@@ -255,16 +256,5 @@ function isDone() {
         else if (alignSelf == 'end') {
             sub.style = 'align-self: reset;';
         }
-    }
-}
-
-function submitForm() {
-    var http = new XMLHttpRequest();
-    http.open("POST", "<<whereverTheFormIsGoing>>", true);
-    http.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-    var params = "search=" + document.getElementById('em').value; // probably use document.getElementById(...).value
-    http.send(params);
-    http.onload = function() {
-        alert(http.responseText);
     }
 }
